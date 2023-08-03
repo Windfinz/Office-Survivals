@@ -4,47 +4,33 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float Speed = 7f;
-
-    private Rigidbody2D body;
-    private Vector2 axisMovement;
-
-    Vector2 movement;
+    public float moveSpeed;
+    Rigidbody2D rb;
+    Vector2 moveDir;
 
     private void Start()
     {
-        body = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        axisMovement.x = Input.GetAxisRaw("Horizontal");
-        axisMovement.y = Input.GetAxisRaw("Vertical");
+        InputManagement();
     }
 
     private void FixedUpdate()
     {
         Move();
     }
+
+    void InputManagement()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        moveDir = new Vector2(moveX, moveY).normalized;
+    }
     private void Move()
     {
-        body.velocity = axisMovement.normalized * Speed;
-        CheckForFlipping();
-    }
-    private void CheckForFlipping()
-    {
-        bool movingLeft = axisMovement.x < 0;
-        bool movingRight = axisMovement.x > 0;
-
-        if (movingLeft)
-        {
-            transform.localScale = new Vector3(1f, transform.localScale.y);
-        }
-        if (movingRight)
-        {
-            transform.localScale = new Vector3(-1f, transform.localScale.y);
-        }
+        rb.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
     }
 }
