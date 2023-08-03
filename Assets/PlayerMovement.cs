@@ -5,21 +5,46 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed = 5f;
+    private float Speed = 7f;
 
-    public Rigidbody2D rb;
+    private Rigidbody2D body;
+    private Vector2 axisMovement;
 
     Vector2 movement;
+
+    private void Start()
+    {
+        body = GetComponent<Rigidbody2D>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        axisMovement.x = Input.GetAxisRaw("Horizontal");
+        axisMovement.y = Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        Move();
+    }
+    private void Move()
+    {
+        body.velocity = axisMovement.normalized * Speed;
+        CheckForFlipping();
+    }
+    private void CheckForFlipping()
+    {
+        bool movingLeft = axisMovement.x < 0;
+        bool movingRight = axisMovement.x > 0;
+
+        if (movingLeft)
+        {
+            transform.localScale = new Vector3(1f, transform.localScale.y);
+        }
+        if (movingRight)
+        {
+            transform.localScale = new Vector3(-1f, transform.localScale.y);
+        }
     }
 }
