@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public float lastVerticalVector;
     [HideInInspector]
-    Vector2 moveDir;
+    public Vector2 moveDir;
 
     private void Start()
     {
