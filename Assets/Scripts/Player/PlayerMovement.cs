@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
-    void InputManagement()
+     private void InputManagement()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
