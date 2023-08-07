@@ -61,11 +61,12 @@ public class MapController : MonoBehaviour
             {
                 noTerrainPosition = currentChunk.transform.Find("Down").position;
                 SpawnChunk();
-                noTerrainPosition = currentChunk.transform.Find("RightDown").position;
-                SpawnChunk();
                 noTerrainPosition = currentChunk.transform.Find("LeftDown").position;
                 SpawnChunk();
+                noTerrainPosition = currentChunk.transform.Find("RightDown").position;
+                SpawnChunk();
             }
+            
         }
         else if (pm.moveDir.x == 0 && pm.moveDir.y > 0) // up
         {
