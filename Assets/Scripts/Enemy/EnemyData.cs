@@ -2,11 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Enemy", order = 1)]
+[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Enemy")]
 public class EnemyData : ScriptableObject
 {
-    public int hp;
-    public int damage;
-    public float speed;
+    [SerializeField]
+    float moveSpeed;
+    public float MoveSpeed { get => moveSpeed; private set => moveSpeed = value; }
+
+    [SerializeField]
+    float maxHealth;
+
+    public float MaxHealth { get => maxHealth; private set => maxHealth = value; }
+
+    [SerializeField]
+    float damage;
+
+    public float Damage { get => damage; private set => damage = value; }   
 
 }

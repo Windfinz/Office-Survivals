@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90314a24a7a8b934cbff079b20e28163, type: 3}
   m_Name: PencilZom
   m_EditorClassIdentifier: 
-  hp: 30
-  damage: 5
-  speed: 1.5
+  moveSpeed: 2
+  maxHealth: 0
+  damage: 0

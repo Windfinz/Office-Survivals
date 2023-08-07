@@ -356,9 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b1f6264ad2fe04a87e57a5be8afd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  speed: 4
-  data: {fileID: 11400000, guid: e6252d347709e7f42817029ed48f5401, type: 2}
+  enemyData: {fileID: 11400000, guid: e6252d347709e7f42817029ed48f5401, type: 2}
 --- !u!1 &484449783
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,9 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b1f6264ad2fe04a87e57a5be8afd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
-  speed: 4
-  data: {fileID: 11400000, guid: d63aeab672a172547b65a43fa8696e5c, type: 2}
+  enemyData: {fileID: 11400000, guid: d63aeab672a172547b65a43fa8696e5c, type: 2}
 --- !u!114 &484449786
 MonoBehaviour:
   m_ObjectHideFlags: 0
