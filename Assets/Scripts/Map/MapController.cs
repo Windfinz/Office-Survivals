@@ -61,6 +61,10 @@ public class MapController : MonoBehaviour
             {
                 noTerrainPosition = currentChunk.transform.Find("Down").position;
                 SpawnChunk();
+                noTerrainPosition = currentChunk.transform.Find("RightDown").position;
+                SpawnChunk();
+                noTerrainPosition = currentChunk.transform.Find("LeftDown").position;
+                SpawnChunk();
             }
         }
         else if (pm.moveDir.x == 0 && pm.moveDir.y > 0) // up
@@ -68,6 +72,10 @@ public class MapController : MonoBehaviour
             if (!Physics2D.OverlapCircle(currentChunk.transform.Find("Up").position, checkerRadius, terrainMask))
             {
                 noTerrainPosition = currentChunk.transform.Find("Up").position;
+                SpawnChunk();
+                noTerrainPosition = currentChunk.transform.Find("RightUp").position;
+                SpawnChunk();
+                noTerrainPosition = currentChunk.transform.Find("LeftUp").position;
                 SpawnChunk();
             }
         }
