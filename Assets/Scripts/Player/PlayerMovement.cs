@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 moveDir;
     [HideInInspector]
     public Vector2 lastMovedVector;
+    public Vector2 axisMovement;
 
     private void Start()
     {
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         InputManagement();
+        axisMovement.x = Input.GetAxisRaw("Horizontal");
+        axisMovement.y = Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
@@ -30,24 +33,24 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
-     private void InputManagement()
+    private void InputManagement()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDir = new Vector2(moveX, moveY).normalized;
-        if(moveDir.x != 0)
+        if (moveDir.x != 0)
         {
             lastHorizontalVector = moveDir.x;
             lastMovedVector = new Vector2(lastHorizontalVector, 0f);
         }
-        if(moveDir.y != 0)
+        if (moveDir.y != 0)
         {
             lastVerticalVector = moveDir.y;
             lastMovedVector = new Vector2(0f, lastVerticalVector);
 
         }
-        if(moveDir.x != 0 && moveDir.y != 0)
+        if (moveDir.x != 0 && moveDir.y != 0)
         {
             lastMovedVector = new Vector2(lastHorizontalVector, lastVerticalVector);
         }
@@ -55,5 +58,20 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         rb.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
+        CheckForFlipping();
+    }
+    private void CheckForFlipping()
+    {
+        bool movingLeft = axisMovement.x < 0;
+        bool movingRight = axisMovement.x > 0;
+
+        if (movingLeft)
+        {
+            transform.localScale = new Vector3(-1f, transform.localScale.y);
+        }
+        if (movingRight)
+        {
+            transform.localScale = new Vector3(1f, transform.localScale.y);
+        }
     }
 }
