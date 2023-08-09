@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class PencilBehaviour : ProjectileController
 {
-    PencilController pc;
     protected override void Start()
     {
         base.Start();
-        pc = FindObjectOfType<PencilController>();
     }
 
     void Update()
     {
-        transform.position += direction * pc.speed * Time.deltaTime;
+        transform.position += direction * weaponData.Speed * Time.deltaTime;
     }
 }

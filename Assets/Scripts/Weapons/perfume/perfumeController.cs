@@ -14,7 +14,7 @@ public class perfumeController : WeaponController
     private protected override void Attack()
     {
         base.Attack();
-        GameObject spawnedperfume = Instantiate(prefab);
+        GameObject spawnedperfume = Instantiate(weaponData.Prefab);
         spawnedperfume.transform.position = transform.position;
         spawnedperfume.transform.parent = transform;
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyStart : MonoBehaviour
+public class EnemyStats : MonoBehaviour
 {
     public EnemyData enemyData;
     float currentMoveSpeed;

@@ -13,7 +13,7 @@ public class PencilController : WeaponController
     private protected override void Attack()
     {
         base.Attack();
-        GameObject spawnPencil = Instantiate(prefab);
+        GameObject spawnPencil = Instantiate(weaponData.Prefab);
         spawnPencil.transform.position = transform.position;
         spawnPencil.GetComponent<PencilBehaviour>().DirectionChecker(pm.lastMovedVector);
     }
