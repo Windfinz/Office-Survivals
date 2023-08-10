@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
-    Rigidbody2D rb;
+    
     [HideInInspector]
     public float lastHorizontalVector;
     [HideInInspector]
@@ -15,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public Vector2 lastMovedVector;
     public Vector2 axisMovement;
+
+    Rigidbody2D rb;
+    public CharacterScriptableObject characterData;
 
     private void Start()
     {
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Move()
     {
-        rb.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
+        rb.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed);
         CheckForFlipping();
     }
     private void CheckForFlipping()
