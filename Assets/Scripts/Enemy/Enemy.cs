@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        player = FindAnyObjectByType<PlayerMovement>().transform;
+        player = FindObjectOfType<PlayerMovement>().transform;
     }
     private void Update()
     {
