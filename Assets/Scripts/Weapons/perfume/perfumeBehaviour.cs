@@ -21,5 +21,13 @@ public class perfumeBehaviour : MeleeWeaponBehaviour
 
             markedEnemies.Add(col.gameObject);
         }
+        else if (col.CompareTag("Prop"))
+        {
+            if (col.gameObject.TryGetComponent(out BreakableProps breakable) && !markedEnemies.Contains(col.gameObject))
+            {
+                breakable.TakeDamage(currentDamage);
+                markedEnemies.Add(col.gameObject);
+            }
+        }
     }
 }
