@@ -16,10 +16,11 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 axisMovement;
 
     Rigidbody2D rb;
-    public CharacterScriptableObject characterData;
+    PlayerStats player;
 
     private void Start()
     {
+        player = GetComponent<PlayerStats>();
         rb = GetComponent<Rigidbody2D>();
         lastMovedVector = new Vector2(1, 0f);
     }
@@ -59,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Move()
     {
-        rb.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed);
+        rb.velocity = new Vector2(moveDir.x * player.currentMoveSpeed, moveDir.y * player.currentMoveSpeed);
         CheckForFlipping();
     }
     private void CheckForFlipping()

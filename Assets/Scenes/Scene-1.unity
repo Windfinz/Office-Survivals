@@ -322,7 +322,6 @@ MonoBehaviour:
   moveDir: {x: 0, y: 0}
   lastMovedVector: {x: 0, y: 0}
   axisMovement: {x: 0, y: 0}
-  characterData: {fileID: 11400000, guid: 3055a3d8e36120f428b227e4540b3e22, type: 2}
 --- !u!4 &1483206381
 Transform:
   m_ObjectHideFlags: 0
@@ -452,6 +451,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 3055a3d8e36120f428b227e4540b3e22, type: 2}
+  currentHealth: 0
+  currentRecovery: 0
+  currentMoveSpeed: 0
+  currentMight: 0
+  currentProjectileSpeed: 0
   experience: 0
   level: 1
   experienceCap: 100
@@ -530,6 +534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableTrashCan
       objectReference: {fileID: 0}
+    - target: {fileID: 9199868245627881505, guid: 68b2460060694ea41848b827f99fa306, type: 3}
+      propertyPath: drops.Array.data[0].dropRate
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68b2460060694ea41848b827f99fa306, type: 3}
 --- !u!1 &1777424444
@@ -548,7 +556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1777424445
 Transform:
   m_ObjectHideFlags: 0
@@ -593,7 +601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2034729857
 Transform:
   m_ObjectHideFlags: 0
@@ -683,6 +691,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: e6252d347709e7f42817029ed48f5401, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
 --- !u!114 &2122623488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,12 +701,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122623484}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38b1f6264ad2fe04a87e57a5be8afd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: e6252d347709e7f42817029ed48f5401, type: 2}
 --- !u!212 &2122623489
 SpriteRenderer:
   m_ObjectHideFlags: 0
