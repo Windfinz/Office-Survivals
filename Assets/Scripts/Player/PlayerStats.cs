@@ -6,7 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
     public CharacterScriptableObject characterData;
 
-    //[HideInInspector]
+    [HideInInspector]
     public float currentHealth;
     [HideInInspector]
     public float currentRecovery;
@@ -16,6 +16,9 @@ public class PlayerStats : MonoBehaviour
     public float currentMight;
     [HideInInspector]
     public float currentProjectileSpeed;
+    [HideInInspector]
+    public float currentMagnet;
+
 
     [Header("Experience/Level")]
     public int experience = 0;
@@ -41,6 +44,7 @@ public class PlayerStats : MonoBehaviour
         currentMoveSpeed = characterData.MoveSpeed;
         currentMight = characterData.Might;
         currentProjectileSpeed = characterData.ProjectileSpeed;
+        currentMagnet = characterData.Magnet;
     }
 
     private void Start()
