@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PerfumeWeapon
   m_EditorClassIdentifier: 
   prefabs: {fileID: 6372894965297440638, guid: 7ba6b65b374140b4cb74e5c8cbeebf9a, type: 3}
-  damage: 5
+  damage: 10
   speed: 0
-  cooldownDuration: 3
+  cooldownDuration: 1.5
   pierce: 0
