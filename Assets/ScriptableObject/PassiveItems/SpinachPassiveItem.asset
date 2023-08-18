@@ -9,13 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a5c17993a682624393938c3cb04cf1b, type: 3}
-  m_Name: PerfumeCharacter
+  m_Script: {fileID: 11500000, guid: a71b624f570273c499d499865d14a905, type: 3}
+  m_Name: SpinachPassiveItem
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 5361564780005455275, guid: 22ecf470bfcf5a14fbb0563bf58e0ace, type: 3}
-  maxHealth: 500
-  recovery: 2
-  moveSpeed: 5
-  might: 1
-  projectileSpeed: 0
-  magnet: 1.5
+  multipler: 100

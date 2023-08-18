@@ -691,6 +691,7 @@ GameObject:
   - component: {fileID: 1483206382}
   - component: {fileID: 1483206385}
   - component: {fileID: 1483206387}
+  - component: {fileID: 1483206388}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -848,7 +849,6 @@ MonoBehaviour:
   currentMight: 0
   currentProjectileSpeed: 0
   currentMagnet: 0
-  spawnedWeapons: []
   experience: 0
   level: 1
   experienceCap: 100
@@ -860,6 +860,39 @@ MonoBehaviour:
   - startLevel: 4
     endLevel: 5
     experienceCapIncrease: 200
+  weaponIndex: 0
+  passiveItemIndex: 0
+  secondWeaponTest: {fileID: 5361564780005455275, guid: 22ecf470bfcf5a14fbb0563bf58e0ace, type: 3}
+  firstPassiveItemTest: {fileID: 2624023718950428699, guid: 77aa8498adcafdb42ab6b425630fa9cb, type: 3}
+  secondPassiveItemTest: {fileID: 3878520357477051170, guid: 592c16c093f509644977c4d5736ece10, type: 3}
+--- !u!114 &1483206388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483206377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d63627f4535b174b9f38fdf88092996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  weaponLevels: 000000000000000000000000000000000000000000000000
+  passiveItemSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  passiveItemLevels: 000000000000000000000000000000000000000000000000
 --- !u!1 &1550183061
 GameObject:
   m_ObjectHideFlags: 0
