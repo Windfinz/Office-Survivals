@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ba762603d245c24ca65c5000c703f86, type: 3}
-  m_Name: PerfumeWeapon
+  m_Name: PencilWeaponLevel2
   m_EditorClassIdentifier: 
-  prefabs: {fileID: 6372894965297440638, guid: 7ba6b65b374140b4cb74e5c8cbeebf9a, type: 3}
-  damage: 10
-  speed: 0
+  prefabs: {fileID: 696256258549484234, guid: a0753581abe2d17478e34ca2a7cf9358, type: 3}
+  damage: 5
+  speed: 10
   cooldownDuration: 1.5
-  pierce: 0
+  pierce: 1
+  level: 2
+  nextLevelPrefab: {fileID: 0}
