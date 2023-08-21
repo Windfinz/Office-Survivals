@@ -15,3 +15,4 @@ MonoBehaviour:
   multipler: 50
   level: 1
   nextLevelPrefab: {fileID: 2624023718950428699, guid: 9d0eb53fb01baeb4aa6738c5da63e81f, type: 3}
+  icon: {fileID: 21300000, guid: 190af6282ba128d4a80eba4f868f865c, type: 3}
