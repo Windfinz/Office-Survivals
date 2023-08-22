@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PerfumeCharacter
   m_EditorClassIdentifier: 
   startingWeapon: {fileID: 5361564780005455275, guid: 22ecf470bfcf5a14fbb0563bf58e0ace, type: 3}
-  maxHealth: 500
+  maxHealth: 10
   recovery: 2
   moveSpeed: 5
   might: 1

@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+
     public enum GameState
     {
         Gameplay,
@@ -17,9 +20,28 @@ public class GameManager : MonoBehaviour
 
     [Header("UI")]
     public GameObject pauseScreen;
+    public GameObject resultsScreen;
+
+    public Text currentHealthDisplay;
+    public Text currentRecoveryDisplay;
+    public Text currentMoveSpeedDisplay;
+    public Text currentMightDisplay;
+    public Text currentProjectileSpeedDisplay;
+    public Text currentMagnetDisplay;
+
+    public bool isGameOver = false;
 
     void Awake()
     {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Debug.LogWarning("EXTRA" + this + "DELETED");
+        }
+
         DisableScreen();
     }
 
@@ -37,6 +59,12 @@ public class GameManager : MonoBehaviour
                 break; 
             
             case GameState.GameOver:
+                if (!isGameOver)
+                {
+                    isGameOver = true;
+                    Debug.Log("GAME IS OVER");
+                    DisplayResults();
+                }
                 break;
 
             default:
@@ -91,6 +119,14 @@ public class GameManager : MonoBehaviour
     void DisableScreen()
     {
         pauseScreen.SetActive(false);
+        resultsScreen.SetActive(false);
     }
-
+    public void GameOver()
+    {
+        ChangeState(GameState.GameOver);
+    }
+    void DisplayResults()
+    {
+        resultsScreen.SetActive(true);
+    }
 }

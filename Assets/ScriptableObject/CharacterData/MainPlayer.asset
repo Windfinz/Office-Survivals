@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MainPlayer
   m_EditorClassIdentifier: 
   startingWeapon: {fileID: 8022814805482399308, guid: 4863c553a0ace4f4a9bc7ffed3b10e46, type: 3}
-  maxHealth: 500
+  maxHealth: 10
   recovery: 2
   moveSpeed: 5
   might: 1
