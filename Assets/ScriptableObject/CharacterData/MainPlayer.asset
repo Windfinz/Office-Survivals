@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5c17993a682624393938c3cb04cf1b, type: 3}
   m_Name: MainPlayer
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 768d769751149d147a1248c6a4c8693f, type: 3}
+  name: Pencil Char
   startingWeapon: {fileID: 8022814805482399308, guid: 4863c553a0ace4f4a9bc7ffed3b10e46, type: 3}
   maxHealth: 10
   recovery: 2
