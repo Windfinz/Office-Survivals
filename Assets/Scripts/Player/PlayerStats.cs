@@ -148,8 +148,8 @@ public class PlayerStats : MonoBehaviour
         CurrentProjectileSpeed = characterData.ProjectileSpeed;
         CurrentMagnet = characterData.Magnet;
 
-        SpawWeapon(characterData.StartingWeapon);
-        SpawWeapon(secondWeaponTest);
+        SpawnWeapon(characterData.StartingWeapon);
+        SpawnWeapon(secondWeaponTest);
         SpawnPassiveItem(firstPassiveItemTest);
         SpawnPassiveItem(secondPassiveItemTest);
 
@@ -186,6 +186,7 @@ public class PlayerStats : MonoBehaviour
 
         LeveUpChecker();
     }
+
     void LeveUpChecker()
     {
         if(experience >= experienceCap)
@@ -202,6 +203,8 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             experienceCap += experienceCapIncrease;
+
+            GameManager.instance.StartLevelUp();
         }
     }
     public void TakeDamage(float dmg)
@@ -253,7 +256,7 @@ public class PlayerStats : MonoBehaviour
             }
         }
     }
-    public void SpawWeapon(GameObject weapon)
+    public void SpawnWeapon(GameObject weapon)
     {
         if(weaponIndex >= inventory.weaponSlots.Count - 1)
         {
