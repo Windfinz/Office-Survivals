@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71b624f570273c499d499865d14a905, type: 3}
   m_Name: WingsPassiveItem
   m_EditorClassIdentifier: 
-  multipler: 50
+  multipler: 10
   level: 1
   nextLevelPrefab: {fileID: 2624023718950428699, guid: 9d0eb53fb01baeb4aa6738c5da63e81f, type: 3}
+  name: Wings
+  description: Increases movement speed by 10%
   icon: {fileID: 21300000, guid: 190af6282ba128d4a80eba4f868f865c, type: 3}

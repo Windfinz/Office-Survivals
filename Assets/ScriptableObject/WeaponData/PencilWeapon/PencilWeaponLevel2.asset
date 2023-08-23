@@ -19,4 +19,6 @@ MonoBehaviour:
   pierce: 1
   level: 2
   nextLevelPrefab: {fileID: 0}
+  name: Pencil (level 2)
+  description: Cooldown reduce by 5
   icon: {fileID: 21300000, guid: c8756ea3768300048aa485d83f32b86a, type: 3}
