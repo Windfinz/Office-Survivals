@@ -6733,14 +6733,18 @@ MonoBehaviour:
   - {fileID: 537726349}
   - {fileID: 2146060261}
   weaponUpgradeOptions:
-  - initialWeapon: {fileID: 8022814805482399308, guid: 4863c553a0ace4f4a9bc7ffed3b10e46, type: 3}
+  - weaponUpgradeIndex: 0
+    initialWeapon: {fileID: 8022814805482399308, guid: 4863c553a0ace4f4a9bc7ffed3b10e46, type: 3}
     weaponData: {fileID: 11400000, guid: 44207380b78dc7c4d85d6c8b5b4060ec, type: 2}
-  - initialWeapon: {fileID: 5361564780005455275, guid: 22ecf470bfcf5a14fbb0563bf58e0ace, type: 3}
+  - weaponUpgradeIndex: 1
+    initialWeapon: {fileID: 5361564780005455275, guid: 22ecf470bfcf5a14fbb0563bf58e0ace, type: 3}
     weaponData: {fileID: 11400000, guid: 536f8ae43f2f554459ca1854a5e57ab5, type: 2}
   passiveItemUpgradeOptions:
-  - initialPassiveItem: {fileID: 2624023718950428699, guid: 77aa8498adcafdb42ab6b425630fa9cb, type: 3}
+  - passiveItemUpgradeIndex: 0
+    initialPassiveItem: {fileID: 2624023718950428699, guid: 77aa8498adcafdb42ab6b425630fa9cb, type: 3}
     passiveItemData: {fileID: 11400000, guid: a2b0f942f84b6e44a9fc172a21f8849a, type: 2}
-  - initialPassiveItem: {fileID: 3878520357477051170, guid: 592c16c093f509644977c4d5736ece10, type: 3}
+  - passiveItemUpgradeIndex: 1
+    initialPassiveItem: {fileID: 3878520357477051170, guid: 592c16c093f509644977c4d5736ece10, type: 3}
     passiveItemData: {fileID: 11400000, guid: 589277b43f099a14ca526f90c07f3b10, type: 2}
   upgradeUIOptions:
   - upgradeNameDisplay: {fileID: 2000174587}
