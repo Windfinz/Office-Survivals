@@ -134,6 +134,8 @@ public class PlayerStats : MonoBehaviour
 
     [Header("UI")]
     public Image healthBar;
+    public Image expBar;
+    public Text levelText;
 
     public GameObject secondWeaponTest;
     public GameObject firstPassiveItemTest, secondPassiveItemTest;
@@ -172,6 +174,9 @@ public class PlayerStats : MonoBehaviour
         GameManager.instance.AssignChosenCharacterUI(characterData);
 
         UpdateHealthBar();
+        UpdateExpBar();
+        UpdateLevelText();
+
     }
     private void Update()
     {
@@ -191,6 +196,8 @@ public class PlayerStats : MonoBehaviour
         experience += amount;
 
         LeveUpChecker();
+
+        UpdateExpBar();
     }
 
     void LeveUpChecker()
@@ -210,9 +217,22 @@ public class PlayerStats : MonoBehaviour
             }
             experienceCap += experienceCapIncrease;
 
+            UpdateLevelText();
+
             GameManager.instance.StartLevelUp();
         }
     }
+
+    void UpdateExpBar()
+    {
+        expBar.fillAmount = (float)experience / experienceCap;
+    }
+
+    void UpdateLevelText()
+    {
+        levelText.text = "LV " + level.ToString();
+    }
+
     public void TakeDamage(float dmg)
     {
         if (!isInvincible)
