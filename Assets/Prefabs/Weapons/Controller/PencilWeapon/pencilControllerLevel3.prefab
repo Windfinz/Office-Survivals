@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8022814805482399309}
   - component: {fileID: 8022814805482399310}
   m_Layer: 0
-  m_Name: pencilControllerLevel2
+  m_Name: pencilControllerLevel3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e790a883f9a8d1438821f175c6443a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 9c4058ff6ddf0384895a963e354d0655, type: 2}
+  weaponData: {fileID: 11400000, guid: 6d6d5cff091790948928f2e18e159814, type: 2}
