@@ -3973,16 +3973,33 @@ MonoBehaviour:
     waveQuota: 0
     spawnInterval: 2
     spawnCount: 0
-  - waveName: 'Wave '
+  - waveName: Wave 3
     enemyGroups:
     - enemyName: 
       enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
     - enemyName: 
-      enemyCount: 200
+      enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    waveQuota: 0
+    spawnInterval: 2
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: 
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
+    - enemyName: 
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    - enemyName: Boss
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 9038898373098017084, guid: eddef463ef52f424db5d70df6906e2da, type: 3}
     waveQuota: 0
     spawnInterval: 2
     spawnCount: 0

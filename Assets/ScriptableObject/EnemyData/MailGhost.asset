@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90314a24a7a8b934cbff079b20e28163, type: 3}
   m_Name: MailGhost
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 2.3
   maxHealth: 10
-  damage: 20
+  damage: 15
