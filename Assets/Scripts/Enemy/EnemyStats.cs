@@ -59,7 +59,7 @@ public class EnemyStats : MonoBehaviour
     void OnDestroy()
     {
         EnemySpawner es = FindObjectOfType<EnemySpawner>();
-        es.OnEnemyKill();
+        es.OnEnemyKilled();
     }
 
     void ReturnEnemy()
