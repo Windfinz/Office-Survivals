@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/TilteScreen.unity
+    guid: 106ae7431ec33644d9cc32359e9d6ee9
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: b970c2cfdb992a34c85d176e01fcf27e
   - enabled: 1

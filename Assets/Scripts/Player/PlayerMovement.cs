@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 lastMovedVector;
     public Vector2 axisMovement;
 
+    SpriteRenderer sr;
+
     Rigidbody2D rb;
     PlayerStats player;
 
@@ -22,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         player = GetComponent<PlayerStats>();
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         lastMovedVector = new Vector2(1, 0f);
     }
     private void Update()
@@ -80,11 +83,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (movingLeft)
         {
-            transform.localScale = new Vector3(-1f, transform.localScale.y);
+            //transform.localScale = new Vector3(-1f, transform.localScale.y);
+            sr.flipX = true;
         }
         if (movingRight)
         {
-            transform.localScale = new Vector3(1f, transform.localScale.y);
+            //transform.localScale = new Vector3(1f, transform.localScale.y);
+            sr.flipX =false;
         }
     }
 }
