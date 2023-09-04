@@ -28,7 +28,7 @@ public class PlayerStats : MonoBehaviour
                 currentHealth = value;
                 if(GameManager.instance != null)
                 {
-                    GameManager.instance.currentHealthDisplay.text = "Health " + currentHealth;
+                    GameManager.instance.currentHealthDisplay.text = "Health " + currentHealth.ToString("0.00");
                 }
             }
         }
@@ -43,7 +43,7 @@ public class PlayerStats : MonoBehaviour
                 currentRecovery = value;
                 if (GameManager.instance != null)
                 {
-                    GameManager.instance.currentRecoveryDisplay.text = "Recovery " + currentRecovery;
+                    GameManager.instance.currentRecoveryDisplay.text = "Recovery " + currentRecovery.ToString("0.00");
                 }
             }
         }
@@ -58,7 +58,7 @@ public class PlayerStats : MonoBehaviour
                 currentMoveSpeed = value;
                 if (GameManager.instance != null)
                 {
-                    GameManager.instance.currentMoveSpeedDisplay.text = "Move Speed " + currentMoveSpeed;
+                    GameManager.instance.currentMoveSpeedDisplay.text = "Move Speed " + currentMoveSpeed.ToString("0.00");
                 }
             }
         }
@@ -73,7 +73,7 @@ public class PlayerStats : MonoBehaviour
                 currentMight = value;
                 if (GameManager.instance != null)
                 {
-                    GameManager.instance.currentMightDisplay.text = "Might " + currentMight;
+                    GameManager.instance.currentMightDisplay.text = "Might " + currentMight.ToString("0.00");
                 }
             }
         }
@@ -88,7 +88,7 @@ public class PlayerStats : MonoBehaviour
                 currentProjectileSpeed = value;
                 if (GameManager.instance != null)
                 {
-                    GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed " + currentProjectileSpeed;
+                    GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed " + currentProjectileSpeed.ToString("0.00");
                 }
             }
         }
@@ -103,7 +103,7 @@ public class PlayerStats : MonoBehaviour
                 currentMagnet = value;
                 if (GameManager.instance != null)
                 {
-                    GameManager.instance.currentMagnetDisplay.text = "Magnet " + currentMagnet;
+                    GameManager.instance.currentMagnetDisplay.text = "Magnet " + currentMagnet.ToString("0.00");
                 }
             }
         }
