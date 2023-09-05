@@ -7,6 +7,8 @@ public class Tutorial : MonoBehaviour
     [Header("Screen")]
     public GameObject TutorialScreen;
     public GameObject SettingScreen;
+    // setting
+    public GameObject optionsScreen;
 
     void Awake()
     {
@@ -25,5 +27,14 @@ public class Tutorial : MonoBehaviour
     public void DisableSetting()
     {
         SettingScreen.SetActive(false);
+    }
+    // setting
+    public void OpenOptions()
+    {
+        optionsScreen.SetActive(true);
+    }
+    public void CloseOptions()
+    {
+        optionsScreen.SetActive(false);
     }
 }
