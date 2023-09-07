@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static GameManager;
 
 public class PlayerStats : MonoBehaviour
 {
     CharacterScriptableObject characterData;
 
-    
+
+    GameManager lvlUp; 
+
      float currentHealth;   
      float currentRecovery;
      float currentMoveSpeed; 
@@ -164,6 +167,8 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
+        lvlUp = GetComponent<GameManager>();
+
         experienceCap = levelRanges[0].experienceCapIncrease;
         GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
         GameManager.instance.currentRecoveryDisplay.text = "Recovery: " + currentRecovery;
@@ -220,7 +225,15 @@ public class PlayerStats : MonoBehaviour
 
             UpdateLevelText();
 
-            GameManager.instance.StartLevelUp();
+            if (lvlUp.chosenWeaponsData.Count != 0 || lvlUp.chosenPassiveItemsData.Count != 0)
+            {
+                GameManager.instance.StartLevelUp();
+                
+            }
+            else
+            {
+                Debug.LogWarning("NO UPGRADE LEFT");
+            }
         }
     }
 

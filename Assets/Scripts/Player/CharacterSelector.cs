@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CharacterSelector : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class CharacterSelector : MonoBehaviour
 
     void Awake()
     {
-        if(instance == null)
+
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -29,6 +31,9 @@ public class CharacterSelector : MonoBehaviour
 
     public void SelectCharacter(CharacterScriptableObject character)
     {
+        
+       
+
         characterData = character;
     }
     public void DestroySingleton()
