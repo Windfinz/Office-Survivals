@@ -9,8 +9,7 @@ public class PlayerStats : MonoBehaviour
 {
     CharacterScriptableObject characterData;
 
-
-    GameManager lvlUp; 
+    public int LevelCap;
 
      float currentHealth;   
      float currentRecovery;
@@ -167,7 +166,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
-        lvlUp = GetComponent<GameManager>();
+       
 
         experienceCap = levelRanges[0].experienceCapIncrease;
         GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
@@ -199,6 +198,12 @@ public class PlayerStats : MonoBehaviour
     }
     public void IncreaseExperience(int amount)
     {
+        if(level >= LevelCap)
+        {
+            return;
+        }
+
+
         experience += amount;
 
         LeveUpChecker();
@@ -225,15 +230,10 @@ public class PlayerStats : MonoBehaviour
 
             UpdateLevelText();
 
-            if (lvlUp.chosenWeaponsData.Count != 0 || lvlUp.chosenPassiveItemsData.Count != 0)
-            {
+         
                 GameManager.instance.StartLevelUp();
-                
-            }
-            else
-            {
-                Debug.LogWarning("NO UPGRADE LEFT");
-            }
+             
+           
         }
     }
 
