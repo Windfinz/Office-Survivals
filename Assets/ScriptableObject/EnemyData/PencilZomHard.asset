@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PencilZomHard
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
-  maxHealth: 150
+  maxHealth: 40
   damage: 30
