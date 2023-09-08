@@ -4142,7 +4142,7 @@ MonoBehaviour:
   - waveName: Wave 2
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
     waveQuota: 0
@@ -4151,11 +4151,11 @@ MonoBehaviour:
   - waveName: Wave 3
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 5
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
     - enemyName: MailGhost
-      enemyCount: 5
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
@@ -4164,11 +4164,11 @@ MonoBehaviour:
   - waveName: Wave 4
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 5
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
     - enemyName: MailGhost
-      enemyCount: 5
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
@@ -4177,11 +4177,11 @@ MonoBehaviour:
   - waveName: Wave 4
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
     - enemyName: MailGhost
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
@@ -4190,11 +4190,11 @@ MonoBehaviour:
   - waveName: Wave 4
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     - enemyName: MailGhost
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
@@ -4203,11 +4203,11 @@ MonoBehaviour:
   - waveName: Wave 4
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     - enemyName: MailGhost
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
@@ -4307,11 +4307,11 @@ MonoBehaviour:
   - waveName: Wave 12
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 10
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
     - enemyName: MailGhost
-      enemyCount: 10
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
     waveQuota: 0
@@ -4320,11 +4320,11 @@ MonoBehaviour:
   - waveName: Wave 12
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 10
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
     - enemyName: MailGhost
-      enemyCount: 10
+      enemyCount: 60
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
     waveQuota: 0
@@ -4388,7 +4388,7 @@ MonoBehaviour:
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 30
+  maxEnemiesAllowed: 60
   maxEnemiesReached: 0
   waveInterval: 15
   relativeSpawnPoints:
