@@ -180,7 +180,7 @@ MonoBehaviour:
   drops:
   - name: Diamond
     itemPrefab: {fileID: 6666234448834159816, guid: ace0fc692dd513d4b8951019954eab94, type: 3}
-    dropRate: 70
+    dropRate: 50
   - name: Emerald
     itemPrefab: {fileID: 6666234448834159816, guid: 1a04b053f3cbe3644b4475b98c7ab3f3, type: 3}
     dropRate: 10
