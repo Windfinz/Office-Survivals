@@ -4172,7 +4172,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 0.3
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
@@ -4185,7 +4185,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
-    spawnInterval: 0.7
+    spawnInterval: 0.3
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
@@ -4198,7 +4198,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
-    spawnInterval: 0.7
+    spawnInterval: 0.3
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
@@ -4289,7 +4289,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
     waveQuota: 0
-    spawnInterval: 0.3
+    spawnInterval: 0.1
     spawnCount: 0
   - waveName: Wave 12
     enemyGroups:
@@ -4302,7 +4302,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
     waveQuota: 0
-    spawnInterval: 0.7
+    spawnInterval: 0.1
     spawnCount: 0
   - waveName: Wave 12
     enemyGroups:
@@ -4328,7 +4328,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
     waveQuota: 0
-    spawnInterval: 0.7
+    spawnInterval: 0.1
     spawnCount: 0
   - waveName: Wave 12
     enemyGroups:
@@ -4354,7 +4354,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
     waveQuota: 0
-    spawnInterval: 0.3
+    spawnInterval: 0.1
     spawnCount: 0
   - waveName: Wave 12
     enemyGroups:
@@ -7741,7 +7741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f55e1d93c2008469e637872690ef49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelCap: 24
+  LevelCap: 23
   experience: 0
   level: 1
   experienceCap: 100
