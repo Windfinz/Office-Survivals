@@ -15,10 +15,10 @@ MonoBehaviour:
   prefabs: {fileID: 696256258549484234, guid: 22035e345fa3eab4c83eef6a41f7c20e, type: 3}
   damage: 5
   speed: 10
-  cooldownDuration: 1.5
+  cooldownDuration: 1.7
   pierce: 1
   level: 2
   nextLevelPrefab: {fileID: 8022814805482399308, guid: e37be069a5b738a49a391e867a673e65, type: 3}
   name: Pencil (level 2)
-  description: Cooldown reduce by 5
+  description: Cooldown reduce by 0.3
   icon: {fileID: 21300000, guid: c8756ea3768300048aa485d83f32b86a, type: 3}

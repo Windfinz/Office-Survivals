@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba762603d245c24ca65c5000c703f86, type: 3}
   m_Name: PencilWeaponLevel3
   m_EditorClassIdentifier: 
-  prefabs: {fileID: 696256258549484234, guid: 199d65181eae8994bb41e9e9a41c0da4, type: 3}
+  prefabs: {fileID: 696256258549484234, guid: b392bcf1185bd3f4a9e01bf3e938714c, type: 3}
   damage: 10
   speed: 10
-  cooldownDuration: 1.5
+  cooldownDuration: 1.7
   pierce: 1
-  level: 2
-  nextLevelPrefab: {fileID: 0}
+  level: 3
+  nextLevelPrefab: {fileID: 8022814805482399308, guid: 9cb6d6632b9509646953cdec77f48827, type: 3}
   name: Pencil (level 3)
   description: Damage up by 5
   icon: {fileID: 21300000, guid: c8756ea3768300048aa485d83f32b86a, type: 3}

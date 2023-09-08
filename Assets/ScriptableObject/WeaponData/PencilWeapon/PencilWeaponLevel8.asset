@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba762603d245c24ca65c5000c703f86, type: 3}
+  m_Name: PencilWeaponLevel8
+  m_EditorClassIdentifier: 
+  prefabs: {fileID: 8008371204880126696, guid: 57eaea168d7116843b0c4eeefb155a95, type: 3}
+  damage: 15
+  speed: 10
+  cooldownDuration: 1
+  pierce: 2
+  level: 8
+  nextLevelPrefab: {fileID: 0}
+  name: Pencil (level 8)
+  description: Cooldown reduce by 0.5
+  icon: {fileID: 21300000, guid: c8756ea3768300048aa485d83f32b86a, type: 3}

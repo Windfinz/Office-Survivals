@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a878d5294c9744d4ea4fa766a4ad6d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 6d6d5cff091790948928f2e18e159814, type: 2}
+  weaponData: {fileID: 11400000, guid: 9c4058ff6ddf0384895a963e354d0655, type: 2}
   destroyAfterSeconds: 3
 --- !u!60 &9007453828910401807
 PolygonCollider2D:

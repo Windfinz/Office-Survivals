@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba762603d245c24ca65c5000c703f86, type: 3}
+  m_Name: PerfumeWeaponLevel4
+  m_EditorClassIdentifier: 
+  prefabs: {fileID: 6372894965297440638, guid: a7f9d16b8b268aa48bd9e73d2c2ee656, type: 3}
+  damage: 10
+  speed: 0
+  cooldownDuration: 2.5
+  pierce: 0
+  level: 4
+  nextLevelPrefab: {fileID: 5361564780005455275, guid: 1af067ed741b70e44910bb51734880f7, type: 3}
+  name: Perfume (level 4)
+  description: Damage up by 5
+  icon: {fileID: 21300000, guid: 632bddde945a4884692d20cb86317a41, type: 3}

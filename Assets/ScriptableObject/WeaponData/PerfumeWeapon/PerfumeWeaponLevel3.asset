@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: PerfumeWeaponLevel3
   m_EditorClassIdentifier: 
   prefabs: {fileID: 6372894965297440638, guid: 2d77766e30f2ad747b088624b43825b0, type: 3}
-  damage: 10
+  damage: 5
   speed: 0
   cooldownDuration: 2.5
   pierce: 0
-  level: 2
-  nextLevelPrefab: {fileID: 0}
+  level: 3
+  nextLevelPrefab: {fileID: 5361564780005455275, guid: c274334849086f343bef38c876e6e133, type: 3}
   name: Perfume (level 3)
   description: Range Increase
   icon: {fileID: 21300000, guid: 632bddde945a4884692d20cb86317a41, type: 3}

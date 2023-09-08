@@ -432,7 +432,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &36580925
 GameObject:
@@ -1833,7 +1833,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &323910488
 MonoBehaviour:
@@ -1888,7 +1888,7 @@ MonoBehaviour:
   - {fileID: 928091593}
   - {fileID: 1441511372}
   - {fileID: 909260059}
-  timeLimit: 900
+  timeLimit: 600
   stopwatchDisplay: {fileID: 1800583432}
   isGameOver: 0
   choosingUpgrade: 0
@@ -4115,7 +4115,7 @@ Transform:
   - {fileID: 1468768576}
   - {fileID: 2044465925}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &743849744
 MonoBehaviour:
@@ -4133,7 +4133,7 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: PencilZom
-      enemyCount: 20
+      enemyCount: 15
       spawnCount: 0
       enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
@@ -4142,7 +4142,7 @@ MonoBehaviour:
   - waveName: Wave 2
     enemyGroups:
     - enemyName: MailGhost
-      enemyCount: 20
+      enemyCount: 15
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
     waveQuota: 0
@@ -4154,6 +4154,10 @@ MonoBehaviour:
       enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
@@ -4163,32 +4167,230 @@ MonoBehaviour:
       enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
-  - waveName: Wave 5
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.7
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.7
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.3
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.3
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.3
+    spawnCount: 0
+  - waveName: Wave 10
+    enemyGroups:
+    - enemyName: MailGhostHard
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.7
+    spawnCount: 0
+  - waveName: Wave 11
     enemyGroups:
     - enemyName: MailGhost
       enemyCount: 5
       spawnCount: 0
-      enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 0.7
     spawnCount: 0
-  - waveName: Wave 6
+  - waveName: Wave 11
     enemyGroups:
-    - enemyName: Boss
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.7
+    spawnCount: 0
+  - waveName: Wave 11
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 20
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 20
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.3
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.7
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.7
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.7
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.3
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.3
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: cb67c3130d4f29c4db1f320321589435, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: 293cd64a58c3c364ab4f23fd65182bcf, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 3179195001982438045, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
+    - enemyName: MailGhost
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 1924398138624410064, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.3
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: MailGhost
       enemyCount: 1
       spawnCount: 0
       enemyPrefab: {fileID: 9038898373098017084, guid: eddef463ef52f424db5d70df6906e2da, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 0.7
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 20
+  maxEnemiesAllowed: 30
   maxEnemiesReached: 0
-  waveInterval: 10
+  waveInterval: 15
   relativeSpawnPoints:
   - {fileID: 264794104}
   - {fileID: 1550183062}
@@ -4901,7 +5103,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &939497241
 GameObject:
@@ -6609,7 +6811,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1312453079
 GameObject:
@@ -7426,7 +7628,7 @@ Transform:
   - {fileID: 1715073954}
   - {fileID: 242800480}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1483206382
 Rigidbody2D:
@@ -7539,7 +7741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f55e1d93c2008469e637872690ef49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelCap: 5
+  LevelCap: 24
   experience: 0
   level: 1
   experienceCap: 100
@@ -8677,67 +8879,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578767681}
   m_CullTransparentMesh: 1
---- !u!1001 &1605522237
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.769652
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.2848465
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164209062902030702, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7254281356689072013, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: m_Name
-      value: BreakableTrashCan
-      objectReference: {fileID: 0}
-    - target: {fileID: 9199868245627881505, guid: 68b2460060694ea41848b827f99fa306, type: 3}
-      propertyPath: drops.Array.data[0].dropRate
-      value: 50
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 68b2460060694ea41848b827f99fa306, type: 3}
 --- !u!1 &1617261518
 GameObject:
   m_ObjectHideFlags: 0
@@ -10605,7 +10746,7 @@ RectTransform:
   - {fileID: 1219232795}
   - {fileID: 1850680331}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11065,7 +11206,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2146060259
 GameObject:
@@ -11153,7 +11294,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454744408905816599, guid: fafac55006f42384a9d160699b92e273, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 454744408905816599, guid: fafac55006f42384a9d160699b92e273, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11210,7 +11351,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3179195001982437731, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3179195001982437731, guid: f96faaf4703102f49a0d1718a4869381, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11279,7 +11420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1924398138624410158, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1924398138624410158, guid: 3607a8b166362e54eb4ee172f692b064, type: 3}
       propertyPath: m_LocalPosition.x
