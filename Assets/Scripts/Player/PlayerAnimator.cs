@@ -16,10 +16,10 @@ public class PlayerAnimator : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-   
+
     void Update()
     {
-        if(pm.moveDir.x != 0 || pm.moveDir.y != 0)
+        if (pm.moveDir.x != 0 || pm.moveDir.y != 0)
         {
             am.SetBool("Move", true);
 
@@ -30,15 +30,16 @@ public class PlayerAnimator : MonoBehaviour
             am.SetBool("Move", false);
         }
     }
+
     void SpriteDirectionChecker()
     {
-        if(pm.moveDir.x < 0)
+        if (pm.lastHorizontalVector < 0)
         {
-            sr.flipX = false;
+            sr.flipX = true;
         }
         else
         {
-            sr.flipX = true;
+            sr.flipX = false;
         }
     }
 }

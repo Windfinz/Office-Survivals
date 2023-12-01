@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5c17993a682624393938c3cb04cf1b, type: 3}
   m_Name: PerfumeCharacter
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: e4d1f90bf9185204382937cb60bf6cd1, type: 3}
+  icon: {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
   name: Mary
   startingWeapon: {fileID: 5361564780005455275, guid: 22ecf470bfcf5a14fbb0563bf58e0ace, type: 3}
   maxHealth: 300

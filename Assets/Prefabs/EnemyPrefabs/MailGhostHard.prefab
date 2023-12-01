@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3179195001982438047}
   - component: {fileID: 3179195001982437730}
   - component: {fileID: 3179195001982437733}
+  - component: {fileID: 769831282478318821}
   m_Layer: 0
   m_Name: MailGhostHard
   m_TagString: Enemy
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3179195001982438045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.65, y: 3.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: -860733609
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0c617ab822f87de4691aefef2a4c6eb3, type: 3}
-  m_Color: {r: 0.49279103, g: 0.9245283, b: 0.5298019, a: 1}
+  m_Sprite: {fileID: 1896988559804361465, guid: 25e3c3e2a286eee48bba19e8d339e062, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -131,18 +132,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08058274, y: -0.1328266}
+  m_Offset: {x: -0.008303523, y: -0.1021322}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0602286, y: 0.86197215}
+  m_Size: {x: 0.2890284, y: 0.18669248}
   m_EdgeRadius: 0
 --- !u!50 &3179195001982437730
 Rigidbody2D:
@@ -184,3 +185,24 @@ MonoBehaviour:
   - name: Emerald
     itemPrefab: {fileID: 6666234448834159816, guid: 1a04b053f3cbe3644b4475b98c7ab3f3, type: 3}
     dropRate: 10
+--- !u!95 &769831282478318821
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3179195001982438045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: baa67eee7fa8b9c4ba2715714aefac30, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
